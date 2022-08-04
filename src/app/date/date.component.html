@@ -1,0 +1,56 @@
+<h2>Please select an hour</h2> 
+<h2>Input format</h2>
+<p>hours:minutes</p>
+<br>
+<form #simpleForm="ngForm" (ngSubmit)="register(simpleForm.value)">
+
+    <input type="hours" ngModel name="time" placeholder="enter datetime"><br>
+<br>
+<button (click)="display()">Push</button>
+<p>{{message}}</p>
+</form>
+
+<style>
+
+form {
+margin-left: 20px;
+
+}
+
+h2
+  {
+    margin: 8px 0;
+color:rgb(135, 15, 204);
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(238, 116, 163);
+margin-left: 20px;
+}
+
+p {
+    margin: 8px 0;
+color:rgb(247, 247, 247);
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(8, 8, 8);
+margin-left: 20px;
+}
+
+button {
+  background-color: #7110e0;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+    margin-left: 20px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+button:hover {opacity: 1}
+
+</style>
